@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 09- Tabelat</title>
+  </head>
+  <style>
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    table,
+    td {
+      border: 1px solid black;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <main>
+      <table border="1" tfoot="1">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col bgcolor="yellow" />
+        </colgroup>
+
+        <tbody>
+          <tr bgcolor="gray" height="48px">
+            <th width="200px" colspan="2">Nome</th>
+            <th width="200px">Idade</th>
+            <th width="80px">Aprovado</th>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="/imagem de teste/62032855_2207975785918714_982565032720072704_o.jpg"
+                width="48px
+                "
+              />
+            </td>
+            <td>Mateus Silva Paim</td>
+            <td>Engenheiro Agronômo</td>
+            <td rowspan="2">27 anos</td>
+          </tr>
+
+          <tr height="48px">
+            <td></td>
+            <td>João Paim</td>
+            <td>Professor de Agronomia</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
