@@ -9,61 +9,150 @@
   <body>
     <main>
       <h1>Cadastrar Usuário</h1>
-      <input type="text" placeholder="Seu nome" id="nome" value="nome" />
+      <form
+        action="https://www.w3schools.com/action_page.php"
+        method="post"
+        target="_blank"
+      >
+        <div>
+          <label for="nome"
+            >Nome do Usuario
+            <br />
+            <input type="text" placeholder="Seu nome" id="nome" name="Nome:" />
+          </label>
+        </div>
+        <br />
 
-      <br />
-      <br />
-      <input type="password" placeholder="Senha" id="Senha" />
-      <br />
-      <br />
-      <input type="email" placeholder="E-mail" id="E-mail/>
-      <br />
-      <br />
-      <input type="date" />
-      <br />
-      <br />
-      <input type="text" placeholder="CPF" maxlength="14" />
-      <br />
-      <br />
-      <input type="number" placeholder="Idade" min="18" max="125" />
-      <br />
-      <br />
-      <input type="file" multiple />
-      <br />
-      <br />
-      <input type="color" />
-      <br />
-      <br />
-      <fieldset>
-        <legend>Quais seus pet's?</legend>
-        <input type="checkbox" name="maior" value="Gato" /> Gato
+        <div>
+          <label for="Senha"> Senha </label>
+          <br />
+          <input type="password" placeholder="Senha" id="Senha" name="Senha:" />
+        </div>
         <br />
-        <input type="checkbox" name="maior" value="cachorro" /> cachorro
-        <br />
-        <input type="checkbox" name="maior" value="tartagura " /> tartaruga
-        <br />
-        <br />
-      </fieldset>
 
-      <fieldset>
-        <legend>Você é maior de idade?</legend>
-        <input name="maior" type="radio" value="sim" /> Sim
+        <div>
+          <label for="E-mail">E-mail</label>
+          <br />
+          <input type="email" placeholder="E-mail" id="E-mail" name="E-mail:" />
+        </div>
         <br />
-        <input name="maior" type="radio" value="nao" />nao
-        <br />
-        <br />
-      </fieldset>
 
-      <select>
-        <option value="Carro">Carro</option>
-        <option value="bicicleta">bicicleta</option>
-        <option value="Patins">Patins</option>
-        <option value="Patinete">Patinete</option>
-        <option value="moto">moto</option>
-      </select>
+        <div>
+          <label for="date">Data</label>
+          <br />
+          <input type="date" id="date" name="Data" />
+          <br />
+        </div>
+        <br />
+        <div>
+          <label for="cpf">CPF</label>
+          <br />
+          <input
+            type="text"
+            placeholder="CPF"
+            maxlength="14"
+            id="cpf"
+            name="CPF"
+          />
+        </div>
 
-      <input type="submit" />
-      <input type="button" value="Enviar" />
+        <div>
+          <br />
+          <label for="Idade">Idade</label>
+          <br />
+          <input
+            type="number"
+            placeholder="Idade"
+            min="18"
+            max="125"
+            id="Idade"
+            name="Idade:"
+          />
+          <br />
+        </div>
+        <br />
+
+        <div>
+          <label for="file">Arquivos anexado</label>
+          <br />
+          <input type="file" multiple id="file" name=" Arquivos:" />
+          <br />
+        </div>
+        <br />
+        <div>
+          <label for="color">Cor do Perfil</label>
+          <br />
+          <input type="color" id="color" name="Color:" />
+        </div>
+
+        <br />
+
+        <fieldset>
+          <legend>Quais seus pet's?</legend>
+          <input
+            type="checkbox"
+            name="maior"
+            value="Gato"
+            id="gato"
+            name="gato"
+          />
+          <label for="gato">Gato</label>
+          <br />
+          <input
+            type="checkbox"
+            name="maior"
+            value="cachorro"
+            id="cachorro"
+            name="cachorro"
+          />
+          <label for="cachorro">Cachorro</label>
+          <br />
+          <input
+            type="checkbox"
+            name="maior"
+            value="tartagura"
+            id="tartaruga"
+            name="tartagura"
+          />
+          <label for="tartaruga">Tartaruga</label>
+          <br />
+          <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Você é maior de idade?</legend>
+          <input name="maior" type="radio" value="sim" id="sim" />
+          <label for="sim">Sim</label>
+          <br />
+          <input name="maior" type="radio" value="nao" id="Nao" />
+          <label for="Nao">Não</label>
+          <br />
+        </fieldset>
+        <br />
+        <div>
+          <label for="bens">Seleciona o bem</label>
+          <br />
+          <select id="bens" name="bens">
+            <option value="Carro">Carro</option>
+            <option value="bicicleta">bicicleta</option>
+            <option value="Patins">Patins</option>
+            <option value="Patinete">Patinete</option>
+            <option value="moto">moto</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="mensagem">Sua mensagem</label>
+          <br />
+          <textarea
+            placeholder="Sua mensagem"
+            id="mensagem"
+            name="mensagem"
+          ></textarea>
+        </div>
+        <br />
+        <input type="submit" />
+      </form>
     </main>
   </body>
 </html>
