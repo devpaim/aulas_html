@@ -1,0 +1,64 @@
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+
+/* Não modificar a cima */
+/* article * {
+  background-color: yellow;
+}
+
+p {
+  background-color: blue;}
+*/
+
+
+a:active {
+  background-color: blue;
+}
+a:hover {
+  background-color: blueviolet;
+}
+a:visited {
+  color: black;
+}
+
+h1:hover{
+  background-color: red;
+  cursor: wait;
+}
+
+input:focus-visible {
+  outline: crimson solid 2px;
+}
+li::marker {
+  color: green;
+}
+
+.autor::before {
+  content: "\8986";
+  padding: 5px;
+}
+
+*[class="parag"] {
+  background-color: red;
+}
+/*atributo para as classes [class]{} */
+/* [title ="meu h3" i] Indepedente do conteudo ele vi capitar*/
+/* [title$ ="h"] {background-color } todos titulos h vai receber a cor quando tiver o $} */
+/* [title^="h" { ^ td classe que comeca com H vai receber a cord }
+/* [href*="pg"] {quem tiver gref * pg vai ter o background red } */
+/* li:nth-child( 2 even (par) odd (impar) ) { é posição das filhas dentro do artigo que vai receber a color identificada }  li:nth-of-type()*/ 
+
+
+
+
+
+

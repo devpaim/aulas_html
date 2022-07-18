@@ -1,0 +1,43 @@
+/*
+Toda div que estiver dentro de outra div em qualquer hierarquia
+Seleetor espaço informa que estamos acessando o elemento
+Precisa ser filho direto
+*/
+/*div div {background-color: aquamarine;}
+
+
+
+/* Article > div > p*/
+/*article div p {background-color:blueviolet}*/
+
+/* div > p { background-color: blueviolet;
+
+}
+/*div > p ( somente a filha) */
+
+/* primeiro p que estiver depois do h1 ( h1 + p) */
+/*h1 + p {background-color: blueviolet;}
+
+*/
+/* h1 ~ p {background-color: blueviolet;}*/
+
+
+/*Style em line = 1000*/
+/*!important - so usa em caso especiais.*/
+
+/*#id_parag {
+   background-color: greenyellow;} /*100*/
+
+   /*.paragrafo {background-color: red;} /*10*/
+
+
+p {background-color: blueviolet;} /*1*/
+
+div div p {background-color: brown;}
+
+.seg_p {background-color: aquamarine;}
+p.seg_p {background-color: chocolate;}
+
+div .seg_p {background-color: blueviolet;}
+
+
