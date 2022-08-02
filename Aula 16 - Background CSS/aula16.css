@@ -4,11 +4,11 @@
   border: solid 3px black;
   background-color: bisque;
   background-image: url(https://bemach1.com.br/wp-content/uploads/2022/02/Logo-Mach-02.svg), url(../assets/Photo\ from\ Paim.jpg);
-  background-size: 100px auto, 200px auto;
+  background-size: contain;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom , top;
   background-attachment: scroll, local;
-  overflow-y: scroll; /*coloca um scroll na div */
+  /*overflow-y: scroll; /*coloca um scroll na div */
   /* some os conteudos apos div - overflow: hidden; */
 }
 

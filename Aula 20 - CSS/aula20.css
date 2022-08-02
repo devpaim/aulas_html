@@ -1,0 +1,51 @@
+.button {
+  background-color: blueviolet;
+  width: max-content;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  /*Propriedade - Time - Tipo de animação - delay*/
+  transition: background-color .5s, ease-in-out, padding .5s;
+ 
+  /* Separados
+  transition-property: background-color;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+  transition-delay: 2.5s;*/
+} 
+.button:hover {
+  /*background-color: aquamarine;
+  color: black;
+  padding: 16px 32px;
+  box-shadow: 4px 4px 16px #CCC;*/
+  animation: rotacao 2s;
+}
+
+.transforma {
+  width: 150px;
+  height: 200px;
+  background-color: chartreuse;
+  transition-duration:2s;
+  margin: 100px;
+}
+.transforma:hover {
+  animation: rotacao 3s;
+ /* background-color: blue;
+ transform: rotate(360deg);
+ /*
+ transition-timing-function: ease-in-out;
+ transform: scale(1.5, 1.5)
+ /*transform: skew(30deg, 0deg);*/
+}
+
+@keyframes rotacao {
+  0% {transform: rotate(0deg)
+    ;}
+    50%{
+      background-color: red;
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,46 @@
+span {
+  background-color: yellow;
+}
+.txt_grande {
+  display: inline;
+}
+body {
+  column-count: 3;
+  /*column-width: 300px;*/
+  column-gap: 32px;
+  column-rule: 4px solid black;
+}
+
+/*.txt_principal, .txt_p1 {
+  column-span: all;
+}*/
+
+/*@media screen and (min-width: 800px) {
+body {
+  column-count: 2;
+}
+span {
+  background-color: red;
+}
+}*/
+.cabecario {
+  display: none;
+  
+}
+@media print {
+.cabecario {
+  background-color: aquamarine;
+  display: block;
+  column-span: all;
+}
+  .txt_principal, .txt_p1 {
+    column-span: all;
+  }
+  body {
+    column-count: 2;
+    margin: 0;
+  
+  }
+}
+
+/*animation-iteration-count: infinite;*/ /* Faz a a animação ficar infinita..*/

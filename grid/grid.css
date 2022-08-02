@@ -1,0 +1,31 @@
+.header {
+  background-color: aqua;
+  grid-column: span 3; 
+  /*height: 25vh;*/
+}
+.nav {
+  background-color: blueviolet;
+}
+.main {
+  background-color: brown;
+}
+.aside {
+  background-color: chartreuse;
+}
+.footer {
+  background-color: teal;
+  grid-column: span 3;
+  /*height: 25vh;*/
+ 
+}
+body {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 25vh 50vh 25vh;
+}
+/*.grid_conteudo {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  height: 50vh;
+}*/
